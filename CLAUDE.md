@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A Python script that polls the public AWS Health RSS feed (`status.aws.amazon.com`) and posts new events to a Slack channel via an incoming webhook. No AWS credentials required. Runs on a 15-minute GitHub Actions cron schedule.
+A Python script that polls the public AWS Health RSS feed (`status.aws.amazon.com`) and posts new events to a Slack channel via an incoming webhook. No AWS credentials required. Runs on a 30-minute GitHub Actions cron schedule.
 
 ## How It Works
 
