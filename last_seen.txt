@@ -1,1 +1,0 @@
-https://status.aws.amazon.com/#ec2-us-east-1_1778229161
