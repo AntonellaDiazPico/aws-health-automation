@@ -32,8 +32,15 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/... python check_health.py
 
 ## GitHub Actions
 
-The workflow in `.github/workflows/` triggers every 15 minutes. It requires a `SLACK_WEBHOOK_URL` secret set in the repository settings. After posting, it commits any change to `last_seen.txt` back to `main`.
+The workflow in `.github/workflows/` triggers every 30 minutes. It requires a `SLACK_WEBHOOK_URL` secret set in the repository settings. After posting, it commits any change to `last_seen.txt` back to `main`.
 
 ## State Tracking
 
 `last_seen.txt` holds the entry ID (or timestamp/link) of the most recently seen RSS item. It is committed by the Actions bot after each run — do not add it to `.gitignore`.
+
+Before the first run, seed it with the latest entry ID to avoid a flood of old notifications:
+
+```bash
+python seed_last_seen.py
+git add last_seen.txt && git commit -m "chore: seed last_seen" && git push
+```
