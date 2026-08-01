@@ -1,1 +1,1 @@
-https://status.aws.amazon.com/#directconnect-ap-south-1_1785524075
+https://status.aws.amazon.com/#multipleservices-me-central-1_1777533954
