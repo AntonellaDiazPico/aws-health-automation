@@ -1,1 +1,1 @@
-https://status.aws.amazon.com/#directconnect-eu-central-1_1786897839
+https://status.aws.amazon.com/#directconnect-eu-central-1_1786920667
